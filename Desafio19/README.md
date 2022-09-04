@@ -1,5 +1,12 @@
 # Desafio 19 - Dividir en capas nuestro proyecto
 
+Dividir en capas el último desafío entregable. Agrupando apropiadamente las capas de ruteo, controlador, lógica de negocio y persistencia.
+
+## Consigna
+
+- Considerar agrupar las rutas por funcionalidad, con sus controladores, lógica de negocio con los casos de uso, y capa de persistencia.
+- La capa de persistencia contendrá los métodos necesarios para atender la interacción de la lógica de negocio con los propios datos.
+
 ## Uso
 
 1. Forkeá y cloná el branch _desafio19_.
