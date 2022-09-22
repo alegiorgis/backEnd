@@ -7,17 +7,29 @@ Desarrollarás el backend de una aplicación de e-commerce para poder vender pro
 # User story/brief: 
 
 1- Contendrá las rutas necesarias que permitan listar los productos existentes, ingresar productos nuevos, borrar y modificar sus detalles, así como interactuar con el carrito de compras.
+
 2- Se implementará una API RESTful con los verbos get, post, put y delete para cumplir con todas las acciones necesarias.
+
 3- Debe brindar al frontend un mecanismo de ingreso autorizado al sistema basado en JWT (Json Web Token). 
+
 4- Los productos ingresados se almacenarán en una base de datos MongoDB. 
+
 5- El usuario podrá registrar sus credenciales de acceso (email y password) para luego poder ingresar a su cuenta. Estas credenciales serán guardadas en la base de datos MongoDB encriptando la contraseña.
+
 6- El cliente tendrá una sesión activa de usuario con tiempo de expiración configurable.
+
 7- Implementarás un canal de chat basado en websockets, el cual permita atender las consultas del cliente.
-8- La arquitectura del servidor estará basada en capas (MVC)
+
+8- La arquitectura del servidor estará basada en capas (MVC).
+
 9- El servidor podrá tomar configuraciones desde un archivo externo.
+
 10- Dispondrá de una vista creada con pug, que permita ver la configuración del servidor.
+
 11- Se enviará un mail a una casilla configurable, por cada registro nuevo de usuario y con cada orden de compra generada.
-12- En caso de detectar algún error, el servidor enviará una vista implementada con ejs, que contenga el id y el detalle completo
+
+12- En caso de detectar algún error, el servidor enviará una vista implementada con ejs, que contenga el id y el detalle completo.
+
 13- Dos opciones para el frontend: desarrollo por parte del estudiante, ó se proporcionará uno para hacer las pruebas necesarias.
 
 # Piezas sugeridas:
@@ -41,11 +53,17 @@ Los requisitos base serán parte de los criterios de evaluación para aprobar el
 1- Inicio: Al momento de requerir la ruta base ‘/’
 
 a) Permitir un menú de ingreso al sistema con email y password así como también la posibilidad de registro de un nuevo usuario.
+
 b) El menú de registro consta del nombre completo del cliente, número telefónico, email y campo de password duplicado para verificar coincidencia.
-c) Si un usuario se loguea exitosamente o está en sesión activa, la ruta ‘/’ hará una re dirección a la ruta del carrito /productos 
+
+c) Si un usuario se loguea exitosamente o está en sesión activa, la ruta ‘/’ hará una re dirección a la ruta del carrito /productos .
+
 d) La ruta /productos devolverá el listado de todos los productos disponibles para la compra.
+
 e) La ruta /productos/:categoria devolverá los productos por la categoría requerida.
+
 f) Los ítems podrán ser agregados al carrito de compras y listados a través de la ruta /carrito.
+
 g) Se podrán modificar y borrar por su id a través de la ruta /carrito:id.
 
 2) Flow: Se puede solicitar un producto específico con la ruta /productos/:id, donde id es el id del item generado por MongoDB y devolver la descripción del producto ( foto, precio, selector de cantidad). 
@@ -112,6 +130,8 @@ yarn start
 ## Table of Contents
 
 - [Entrega Final de Alejandro Giorgis para el curso de Coderhouse Backend](#entrega-final-de-alejandro-giorgis-para-el-curso-de-coderhouse-backend)
+  - [Consigna](#consigna)
+  
   - [Quick Start](#quick-start)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
